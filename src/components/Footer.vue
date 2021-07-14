@@ -4,7 +4,7 @@
     <span v-show="!isActive">{{ note }}</span>
     <div v-show="isActive">
       <span>{{ address }}</span>
-      <a :href="`mailto:${mail}?subject=What%27s%20up%3F`">{{ mail }}</a>
+      <a :href="`mailto:${mail}?subject=What%27s%20up%3F`" target="_blank">{{ mail }}</a>
       <a :href="`tel:${phone}`">{{ phone }}</a>
     </div>
   </footer>
