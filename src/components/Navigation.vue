@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <span>{{ text }}</span>
+    <span v-html="text"></span>
     <button type="button">Menu</button>
   </nav>
 </template>
@@ -17,5 +17,11 @@ defineProps({
 nav {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: var(--color-secondary);
+  mix-blend-mode: difference;
 }
 </style>
