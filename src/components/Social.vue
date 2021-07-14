@@ -12,4 +12,10 @@ defineProps({
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+section {
+  background: var(--color-primary);
+  padding: var(--content-spacing-y--large) var(--content-spacing-x);
+  color: var(--color-secondary);
+}
+</style>
