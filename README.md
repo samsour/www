@@ -16,5 +16,5 @@ yarn dev
 yarn build
 
 # preview built site
-yarn build
+yarn serve
 ```
