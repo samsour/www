@@ -105,6 +105,8 @@ import Footer from "./components/Footer.vue";
   --content-spacing-y: 4vw;
   --content-spacing-x--large: 25vw;
   --content-spacing-y--large: 15vw;
+  --icon-size: 40px;
+  --icon-spacing: 30px;
 }
 
 main {

@@ -1,11 +1,13 @@
 <template>
   <nav>
-    <span v-html="text"></span>
-    <button type="button">Menu</button>
+    <Logo />
+    <Burger />
   </nav>
 </template>
 
 <script setup>
+import Logo from "./Logo.vue"
+import Burger from "./Burger.vue"
 import { defineProps } from 'vue'
 
 defineProps({
