@@ -29,25 +29,29 @@ import Mail from "../assets/icons/mail.svg";
 <style scoped>
 nav {
   background: var(--color-primary);
-  padding: calc(var(--content-spacing-y--large) * 2) var(--content-spacing-x)
-    var(--content-spacing-y--large);
+  padding: var(--content-spacing-y--large) var(--content-spacing-x--large)
+    var(--content-spacing-y);
   color: var(--color-secondary);
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(calc(var(--icon-size) + var(--icon-spacing) * 2), 1fr)
+  );
+  margin-left: calc(-1 * var(--icon-spacing));
 }
 
 a {
-  display: block;
+  display: flex;
   padding: var(--icon-spacing);
-  margin-left: 20px;
   transition: transform 150ms ease-out;
+  will-change: transform;
+  justify-content: center;
+  /* transform: translateX(calc(-1 * var(--icon-spacing))) scale(1); */
 }
 
 a:hover {
+  /* transform: translateX(calc(-1 * var(--icon-spacing))) scale(1.3); */
   transform: scale(1.3);
-}
-
-a:first-of-type {
-  margin-left: calc(-1 * var(--icon-spacing));
 }
 
 svg {
