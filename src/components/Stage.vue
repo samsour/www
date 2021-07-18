@@ -5,11 +5,11 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
+import { defineProps } from "vue";
 
 defineProps({
-  text: String
-})
+  text: String,
+});
 </script>
 
 <style scoped>
@@ -41,12 +41,12 @@ section::after {
     height: 0px;
     margin-bottom: 160px;
   }
-  50%{
+  50% {
     height: 160px;
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  90%{
+  90% {
     height: 0px;
     margin-top: 160px;
     margin-bottom: 0px;

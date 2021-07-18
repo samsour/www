@@ -6,13 +6,13 @@
 </template>
 
 <script setup>
-import Logo from "./Logo.vue"
-import Burger from "./Burger.vue"
-import { defineProps } from 'vue'
+import Logo from "./Logo.vue";
+import Burger from "./Burger.vue";
+import { defineProps } from "vue";
 
 defineProps({
-  text: String
-})
+  text: String,
+});
 </script>
 
 <style scoped>
