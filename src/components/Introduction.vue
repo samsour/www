@@ -15,9 +15,13 @@ defineProps({
 </script>
 
 <style scoped>
+h2 {
+  padding-bottom: calc(var(--content-spacing-y--large) / 2);
+}
+
 img {
   width: var(--image-width);
-  margin-bottom: -6.25vw;
+  margin-bottom: calc(var(--content-spacing-y--large) / -2);
   margin-left: var(--content-spacing-x--large);
   box-shadow: 0 50px 100px rgba(0, 0, 0, 0.25);
 }

@@ -15,7 +15,8 @@ defineProps({
 <style scoped>
 section {
   background: var(--color-primary);
-  padding: var(--content-spacing-y--large) var(--content-spacing-x);
+  padding: calc(var(--content-spacing-y--large) * 2) var(--content-spacing-x)
+    var(--content-spacing-y--large);
   color: var(--color-secondary);
 }
 </style>
