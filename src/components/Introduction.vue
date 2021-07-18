@@ -1,7 +1,7 @@
 <template>
   <section>
     <h2 v-html="text"></h2>
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <img alt="Vue logo" :src="imageUrl" />
   </section>
 </template>
 
@@ -10,15 +10,15 @@ import { defineProps } from "vue";
 
 defineProps({
   text: String,
+  imageUrl: String,
 });
 </script>
 
 <style scoped>
 img {
-  width: 25vw;
+  width: var(--image-width);
   margin-bottom: -6.25vw;
-  z-index: 1;
-  position: relative;
   margin-left: var(--content-spacing-x--large);
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.25);
 }
 </style>

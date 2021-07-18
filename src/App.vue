@@ -3,6 +3,7 @@
   <Stage text="Frontend<br />Web Development" />
   <Introduction
     text="I create digital<br />products with a<br />creative mind<br/>and a focus on<br/>web-based<br />applications."
+    imageUrl="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
   />
   <Social />
   <Footer
@@ -108,6 +109,7 @@ import Footer from "./components/Footer.vue";
   --icon-size: 40px;
   --icon-spacing: 30px;
   --logo-width: 184px;
+  --image-width: 50vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -115,6 +117,7 @@ import Footer from "./components/Footer.vue";
     --h1-size: 10vw;
     --content-spacing-x: 8vw;
     --content-spacing-x--large: var(--logo-width);
+    --image-width: 25vw;
   }
 }
 
@@ -123,6 +126,13 @@ import Footer from "./components/Footer.vue";
     --h1-size: 7vw;
     --content-spacing-x: var(--logo-width);
     --content-spacing-x--large: 25vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  :root {
+    --h1-size: 150px;
+    --content-spacing-x: 10vw;
   }
 }
 
@@ -140,6 +150,7 @@ h4 {
   text-align: left;
   font-weight: normal;
   letter-spacing: -0.03em;
+  mix-blend-mode: luminosity;
 }
 
 h1 {
