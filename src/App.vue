@@ -99,14 +99,31 @@ import Footer from "./components/Footer.vue";
   --color-black: #000;
   --color-primary: var(--color-black);
   --color-secondary: var(--color-white);
-  --h1-size: 8vw;
-  --h2-size: calc(var(--h1-size) / 1.5);
-  --content-spacing-x: 8vw;
-  --content-spacing-y: 4vw;
-  --content-spacing-x--large: 25vw;
-  --content-spacing-y--large: 15vw;
+  --h1-size: 12vw;
+  --h2-size: calc(var(--h1-size) / 1.2);
+  --content-spacing-x: 30px;
+  --content-spacing-y: 5vw;
+  --content-spacing-x--large: calc(var(--content-spacing-x) * 3);
+  --content-spacing-y--large: calc(var(--content-spacing-y) * 3);
   --icon-size: 40px;
   --icon-spacing: 30px;
+  --logo-width: 184px;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --h1-size: 10vw;
+    --content-spacing-x: 8vw;
+    --content-spacing-x--large: var(--logo-width);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --h1-size: 7vw;
+    --content-spacing-x: var(--logo-width);
+    --content-spacing-x--large: 25vw;
+  }
 }
 
 main {
