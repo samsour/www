@@ -103,7 +103,7 @@ import Footer from "./components/Footer.vue";
   --h2-size: calc(var(--h1-size) / 1.2);
   --content-spacing-x: 30px;
   --content-spacing-y: 5vw;
-  --content-spacing-x--large: calc(var(--content-spacing-x) * 3);
+  --content-spacing-x--large: calc(var(--content-spacing-x) * 2);
   --content-spacing-y--large: calc(var(--content-spacing-y) * 3);
   --icon-size: 40px;
   --icon-spacing: 30px;
