@@ -1,6 +1,6 @@
 <template>
   <Navigation text="samsour." />
-  <Stage text="Frontend<br />Web Development" />
+  <Stage text="frontend<br />web development" />
   <Introduction
     text="I create digital<br />products with a<br />creative mind<br/>and a focus on<br/>web-based<br />applications."
     imageUrl="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
