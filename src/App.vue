@@ -25,68 +25,6 @@ import Footer from "./components/Footer.vue";
 </script>
 
 <style>
-@font-face {
-  font-family: "Strawford";
-  src: url("./assets/fonts/strawford-thin-webfont.woff2") format("woff2"),
-    url("./assets/fonts/strawford-thin-webfont.woff") format("woff"),
-    url("./assets/fonts/strawford-thin-webfont.tff") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Strawford";
-  src: url("./assets/fonts/strawford-extralight-webfont.woff2") format("woff2"),
-    url("./assets/fonts/strawford-extralight-webfont.woff") format("woff"),
-    url("./assets/fonts/strawford-extralight-webfont.tff") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Strawford";
-  src: url("./assets/fonts/strawford-light-webfont.woff2") format("woff2"),
-    url("./assets/fonts/strawford-light-webfont.woff") format("woff"),
-    url("./assets/fonts/strawford-light-webfont.tff") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Strawford";
-  src: url("./assets/fonts/strawford-regular-webfont.woff2") format("woff2"),
-    url("./assets/fonts/strawford-regular-webfont.woff") format("woff"),
-    url("./assets/fonts/strawford-regular-webfont.tff") format("truetype");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Strawford";
-  src: url("./assets/fonts/strawford-medium-webfont.woff2") format("woff2"),
-    url("./assets/fonts/strawford-medium-webfont.woff") format("woff"),
-    url("./assets/fonts/strawford-medium-webfont.tff") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Strawford";
-  src: url("./assets/fonts/strawford-bold-webfont.woff2") format("woff2"),
-    url("./assets/fonts/strawford-bold-webfont.woff") format("woff"),
-    url("./assets/fonts/strawford-bold-webfont.tff") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Strawford";
-  src: url("./assets/fonts/strawford-black-webfont.woff2") format("woff2"),
-    url("./assets/fonts/strawford-black-webfont.woff") format("woff"),
-    url("./assets/fonts/strawford-black-webfont.tff") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -105,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: normal;
   font-family: var(--font-family);
   line-height: 1;
 }
@@ -125,7 +63,7 @@ h6 {
   --icon-spacing: 30px;
   --logo-width: 184px;
   --image-width: 50vw;
-  --font-family: "Strawford", Arial, Helvetica, sans-serif;
+  --font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -164,7 +102,7 @@ h3,
 h4 {
   text-align: left;
   font-weight: 400;
-  /* letter-spacing: -0.03em; */
+  letter-spacing: -0.03em;
   mix-blend-mode: luminosity;
 }
 
