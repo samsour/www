@@ -1,6 +1,6 @@
 <template>
   <Navigation text="samsour." />
-  <Stage text="frontend<br />web development" />
+  <Stage text="samsour.<br />frontend<br />web development" />
   <Introduction
     text="I create digital<br />products with a<br />creative mind<br/>and a focus on<br/>web-based<br />applications."
     imageUrl="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
@@ -26,65 +26,65 @@ import Footer from "./components/Footer.vue";
 
 <style>
 @font-face {
-  font-family: "Strawford", sans-serif;
+  font-family: "Strawford";
   src: url("./assets/fonts/strawford-thin-webfont.woff2") format("woff2"),
     url("./assets/fonts/strawford-thin-webfont.woff") format("woff"),
     url("./assets/fonts/strawford-thin-webfont.tff") format("truetype");
   font-weight: 100;
-  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Strawford", sans-serif;
+  font-family: "Strawford";
   src: url("./assets/fonts/strawford-extralight-webfont.woff2") format("woff2"),
     url("./assets/fonts/strawford-extralight-webfont.woff") format("woff"),
     url("./assets/fonts/strawford-extralight-webfont.tff") format("truetype");
   font-weight: 200;
-  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Strawford", sans-serif;
+  font-family: "Strawford";
   src: url("./assets/fonts/strawford-light-webfont.woff2") format("woff2"),
     url("./assets/fonts/strawford-light-webfont.woff") format("woff"),
     url("./assets/fonts/strawford-light-webfont.tff") format("truetype");
   font-weight: 300;
-  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Strawford", sans-serif;
+  font-family: "Strawford";
   src: url("./assets/fonts/strawford-regular-webfont.woff2") format("woff2"),
     url("./assets/fonts/strawford-regular-webfont.woff") format("woff"),
     url("./assets/fonts/strawford-regular-webfont.tff") format("truetype");
-  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Strawford", sans-serif;
+  font-family: "Strawford";
   src: url("./assets/fonts/strawford-medium-webfont.woff2") format("woff2"),
     url("./assets/fonts/strawford-medium-webfont.woff") format("woff"),
     url("./assets/fonts/strawford-medium-webfont.tff") format("truetype");
   font-weight: 500;
-  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Strawford", sans-serif;
+  font-family: "Strawford";
   src: url("./assets/fonts/strawford-bold-webfont.woff2") format("woff2"),
     url("./assets/fonts/strawford-bold-webfont.woff") format("woff"),
     url("./assets/fonts/strawford-bold-webfont.tff") format("truetype");
   font-weight: 700;
-  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Strawford", sans-serif;
+  font-family: "Strawford";
   src: url("./assets/fonts/strawford-black-webfont.woff2") format("woff2"),
     url("./assets/fonts/strawford-black-webfont.woff") format("woff"),
     url("./assets/fonts/strawford-black-webfont.tff") format("truetype");
   font-weight: 900;
-  font-display: swap;
+  font-style: normal;
 }
 
 * {
@@ -93,6 +93,21 @@ import Footer from "./components/Footer.vue";
   box-sizing: border-box;
   background: transparent;
   border: 0;
+}
+
+a,
+span,
+button,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  font-family: var(--font-family);
+  line-height: 1;
 }
 
 :root {
@@ -110,6 +125,7 @@ import Footer from "./components/Footer.vue";
   --icon-spacing: 30px;
   --logo-width: 184px;
   --image-width: 50vw;
+  --font-family: "Strawford", Arial, Helvetica, sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -137,7 +153,6 @@ import Footer from "./components/Footer.vue";
 }
 
 main {
-  font-family: "Strawford", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--color-primary);
@@ -148,8 +163,8 @@ h2,
 h3,
 h4 {
   text-align: left;
-  font-weight: normal;
-  letter-spacing: -0.03em;
+  font-weight: 400;
+  /* letter-spacing: -0.03em; */
   mix-blend-mode: luminosity;
 }
 
