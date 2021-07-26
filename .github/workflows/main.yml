@@ -26,4 +26,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           port: 21 # todo replace with web hosts ftps port
+          local-dir: ./dist/
           server-dir: html/samsour/www/
