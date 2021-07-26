@@ -2,7 +2,7 @@
   <Navigation text="samsour." />
   <Stage text="frontend<br />web development" />
   <Introduction
-    text="I create digital<br />products with a<br />creative mind<br/>and a focus on<br/>web-based<br />applications."
+    text="I create digital products with a creative mind and a focus on web-based applications."
     imageUrl="https://gravatar.com/avatar/ffbe5501ae6465788b4df385fcd944c7?s=500"
   />
   <Social />
@@ -45,7 +45,7 @@ h5,
 h6 {
   font-weight: normal;
   font-family: var(--font-family);
-  line-height: 1;
+  line-height: 1.2;
   color: currentColor;
 }
 
