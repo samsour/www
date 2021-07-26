@@ -21,9 +21,10 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          server: ${{ secrets.server }}
-          username: ${{ secrets.username }}
-          password: ${{ secrets.password }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
-          port: 1234 # todo replace with web hosts ftps port
+          port: 33 # todo replace with web hosts ftps port
+          server-dir: samsour/
           dry-run: true
