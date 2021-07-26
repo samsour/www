@@ -32,6 +32,11 @@ import Footer from "./components/Footer.vue";
   border: 0;
 }
 
+*::selection {
+  color: currentColor;
+  background-color: var(--color-lime);
+}
+
 a,
 span,
 button,
@@ -51,6 +56,8 @@ h6 {
 :root {
   --color-white: #fff;
   --color-black: #000;
+  --color-lime: rgb(89, 201, 145);
+  --color-red: rgb(212, 62, 62);
   --color-primary: var(--color-black);
   --color-secondary: var(--color-white);
   --h1-size: 12vw;
@@ -105,7 +112,6 @@ h4 {
   text-align: left;
   font-weight: 400;
   letter-spacing: -0.03em;
-  mix-blend-mode: luminosity;
 }
 
 h1 {
