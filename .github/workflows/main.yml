@@ -27,4 +27,3 @@ jobs:
           protocol: ftps
           port: 21 # todo replace with web hosts ftps port
           server-dir: samsour/
-          dry-run: true
