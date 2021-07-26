@@ -26,7 +26,7 @@ section::after {
   content: "";
   width: 1px;
   height: 0px;
-  margin-bottom: 160px;
+  margin-top: 160px;
   display: block;
   will-change: height;
   background: var(--color-secondary);
@@ -39,7 +39,7 @@ section::after {
 @keyframes drawHeight {
   10% {
     height: 0px;
-    margin-bottom: 160px;
+    margin-top: 160px;
   }
   50% {
     height: 160px;
@@ -48,8 +48,8 @@ section::after {
   }
   90% {
     height: 0px;
-    margin-top: 160px;
-    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 160px;
   }
 }
 </style>
