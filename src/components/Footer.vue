@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer :class="{ 'is-active': isActive }">
     <div class="row">
       <button type="button" @click="isActive = !isActive">
         {{ isActive ? close : imprint }}
@@ -37,23 +37,9 @@ defineProps({
 <style scoped>
 footer {
   background: var(--color-primary);
-  padding: var(--content-spacing-y--large) var(--content-spacing-x);
+  padding: var(--content-spacing-y) var(--content-spacing-x--large)
+    calc(var(--content-spacing-y) * 2);
   color: var(--color-secondary);
-}
-
-.row,
-.column {
-  display: flex;
-  justify-content: space-between;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.contact {
-  flex-grow: 1;
-  margin-left: ;
 }
 
 button {
