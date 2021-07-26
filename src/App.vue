@@ -61,6 +61,7 @@ h6 {
   --content-spacing-x--large: calc(var(--content-spacing-x) * 2);
   --content-spacing-y--large: calc(var(--content-spacing-y) * 3);
   --icon-size: 40px;
+  --icon-size--social: 28px;
   --icon-spacing: 30px;
   --logo-width: 184px;
   --image-width: 50vw;
@@ -73,6 +74,7 @@ h6 {
     --content-spacing-x: 8vw;
     --content-spacing-x--large: var(--logo-width);
     --image-width: 25vw;
+    --icon-size--social: var(--icon-size);
   }
 }
 
