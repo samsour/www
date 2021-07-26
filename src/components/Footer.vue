@@ -8,7 +8,11 @@
       <div v-show="isActive" class="row contact">
         <span v-html="address"></span>
         <div class="column">
-          <a :href="`mailto:${mail}?subject=What%27s%20up%3F`" target="_blank">
+          <a
+            :href="`mailto:${mail}?subject=What%27s%20up%3F`"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {{ mail }}
           </a>
           <a :href="`tel:${phone}`">{{ phone }}</a>

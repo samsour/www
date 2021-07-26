@@ -1,19 +1,40 @@
 <template>
   <nav>
-    <a href="//github.com/samsour" target="_blank">
+    <a href="//github.com/samsour" target="_blank" rel="noopener noreferrer">
       <GitHub />
+      <span>GitHub</span>
     </a>
-    <a href="//www.linkedin.com/in/samsauer/" target="_blank">
+    <a
+      href="//www.linkedin.com/in/samsauer/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <LinkedIn />
+      <span>LinkedIn</span>
     </a>
-    <a href="//www.xing.com/profile/Sam_Sauer/cv" target="_blank">
+    <a
+      href="//www.xing.com/profile/Sam_Sauer/cv"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <Xing />
+      <span>Xing</span>
     </a>
-    <a href="//twitter.com/qwerfeldein" target="_blank">
+    <a
+      href="//twitter.com/qwerfeldein"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <Twitter />
+      <span>Twitter</span>
     </a>
-    <a href="mailto:hi@samsour.de?subject=What%27s%20up%3F" target="_blank">
+    <a
+      href="mailto:hi@samsour.de?subject=What%27s%20up%3F"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <Mail />
+      <span>Mail</span>
     </a>
   </nav>
 </template>
@@ -46,16 +67,18 @@ a {
   transition: transform 150ms ease-out;
   will-change: transform;
   justify-content: center;
-  /* transform: translateX(calc(-1 * var(--icon-spacing))) scale(1); */
 }
 
 a:hover {
-  /* transform: translateX(calc(-1 * var(--icon-spacing))) scale(1.3); */
-  transform: scale(1.3);
+  transform: scale(1.2);
+}
+
+a span {
+  display: none;
 }
 
 svg {
-  width: var(--icon-size);
-  height: var(--icon-size);
+  width: var(--icon-size--social);
+  height: var(--icon-size--social);
 }
 </style>
