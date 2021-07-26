@@ -9,13 +9,14 @@
         <span v-html="address"></span>
         <div class="column">
           <a
+            v-if="mail"
             :href="`mailto:${mail}?subject=What%27s%20up%3F`"
             target="_blank"
             rel="noopener noreferrer"
           >
             {{ mail }}
           </a>
-          <a :href="`tel:${phone}`">{{ phone }}</a>
+          <a v-if="phone" :href="`tel:${phone}`">{{ phone }}</a>
         </div>
       </div>
 

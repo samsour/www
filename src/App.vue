@@ -12,7 +12,6 @@
     note="made with 🌱 / hosted on 100% green electricity"
     address="Sam Sauer<br />Nahest. 22<br />63110 Rodgau"
     mail="hi@samsour.de"
-    phone="+491605712590"
   />
 </template>
 
