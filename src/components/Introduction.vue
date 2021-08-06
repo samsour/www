@@ -1,7 +1,14 @@
 <template>
   <section>
     <h2 v-html="text"></h2>
-    <img alt="Vue logo" :src="imageUrl" />
+    <img
+      alt="Sam"
+      src="./../assets/images/profile.jpg"
+      srcset="
+        ./../assets/images/profile.jpg   1x,
+        ./../assets/images/profile2x.jpg 2x
+      "
+    />
   </section>
 </template>
 
