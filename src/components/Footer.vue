@@ -45,6 +45,7 @@ footer {
   position: relative;
   padding: var(--content-spacing-y) var(--content-spacing-x--large)
     calc(var(--content-spacing-y) * 2);
+  max-height: 400px;
 }
 
 footer::before {
