@@ -1,6 +1,6 @@
 <template>
   <footer :class="{ 'is-active': isActive }">
-    <div class="row">
+    <div class="content row">
       <button type="button" @click="isActive = !isActive">
         {{ isActive ? close : imprint }}
       </button>
@@ -43,9 +43,7 @@ defineProps({
 footer {
   background-color: var(--color-primary);
   position: relative;
-  padding: var(--content-spacing-y) var(--content-spacing-x--large)
-    calc(var(--content-spacing-y) * 2);
-  max-height: 400px;
+  padding: var(--content-spacing-y) var(--content-spacing-x--large);
 }
 
 footer::before {
@@ -63,6 +61,10 @@ footer::before {
 
 footer.is-active::before {
   height: 100%;
+}
+
+.content {
+  min-height: 140px;
 }
 
 .row {
