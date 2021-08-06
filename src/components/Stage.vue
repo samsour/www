@@ -36,6 +36,13 @@ section::after {
   bottom: 5vh;
 }
 
+h1 {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: var(--animation--fade-in-and-move);
+  animation-delay: 500ms;
+}
+
 @keyframes drawHeight {
   10% {
     height: 0px;

@@ -20,7 +20,7 @@
         </div>
       </div>
 
-      <span v-show="!isActive">{{ note }}</span>
+      <span v-show="!isActive" class="note">{{ note }}</span>
     </div>
   </footer>
 </template>
@@ -41,10 +41,45 @@ defineProps({
 
 <style scoped>
 footer {
-  background: var(--color-primary);
+  background-color: var(--color-primary);
+  position: relative;
   padding: var(--content-spacing-y) var(--content-spacing-x--large)
     calc(var(--content-spacing-y) * 2);
-  color: var(--color-secondary);
+}
+
+footer::before {
+  content: "";
+  background-color: var(--color-secondary);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  z-index: 1;
+  display: block;
+  transition: height 500ms ease-in-out;
+}
+
+footer.is-active::before {
+  height: 100%;
+}
+
+.row {
+  color: var(--color-white);
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 2;
+}
+
+.contact,
+.note {
+  opacity: 0;
+}
+
+footer.is-active .contact,
+.note {
+  animation: var(--animation--fade-in);
+  animation-delay: 500ms;
 }
 
 button {

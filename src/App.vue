@@ -1,6 +1,6 @@
 <template>
   <Navigation text="samsour." />
-  <Stage text="frontend<br />web development" />
+  <Stage text="Frontend<br />Web Development" />
   <Introduction
     text="I create digital products with a creative mind and a focus on web-based applications."
     imageUrl="https://gravatar.com/avatar/ffbe5501ae6465788b4df385fcd944c7?s=500"
@@ -72,6 +72,8 @@ h6 {
   --logo-width: 184px;
   --image-width: 50vw;
   --font-family: Arial, Helvetica, sans-serif;
+  --animation--fade-in: fadeIn 500ms ease-in-out forwards;
+  --animation--fade-in-and-move: fadeInAndMove 500ms ease-in-out forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -122,5 +124,25 @@ h1 {
 h2 {
   padding: var(--content-spacing-y--large) var(--content-spacing-x--large);
   font-size: var(--h2-size);
+}
+
+@keyframes fadeIn {
+  from  {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAndMove {
+  from  {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 </style>

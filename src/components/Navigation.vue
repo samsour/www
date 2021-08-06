@@ -26,5 +26,9 @@ nav {
   z-index: 100;
   color: var(--color-secondary);
   mix-blend-mode: difference;
+  opacity: 0;
+  will-change: opacity;
+  animation: var(--animation--fade-in);
+  animation-delay: 1.5s;
 }
 </style>
