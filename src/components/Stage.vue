@@ -1,6 +1,8 @@
 <template>
   <section>
-    <h1 v-html="text"></h1>
+    <h1>
+      <span>Frontend</span><br /><span>Web Development</span>
+    </h1>
   </section>
 </template>
 
@@ -36,11 +38,21 @@ section::after {
   bottom: 5vh;
 }
 
-h1 {
+span {
   opacity: 0;
   transform: translateY(-20px);
-  animation: var(--animation--fade-in-and-move);
+  animation: var(--animation--fade-in-and-move), var(--animation--background-gradient);
   animation-delay: 500ms;
+  background: linear-gradient(to left, var(--color-dark-purple), var(--color-secondary));
+  background-size: 300%;
+  background-clip: text;
+  color: #000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0000;
+  font-weight: 600;
+}
+span + span {
+  animation-delay: 1500ms;
 }
 
 @keyframes drawHeight {

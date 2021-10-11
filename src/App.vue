@@ -1,6 +1,6 @@
 <template>
   <Navigation text="samsour." />
-  <Stage text="Frontend<br />Web Development" />
+  <Stage />
   <Introduction
     text="I create digital products with a creative mind and a focus on web-based applications."
     imageUrl="https://gravatar.com/avatar/ffbe5501ae6465788b4df385fcd944c7?s=500"
@@ -34,7 +34,7 @@ import Footer from "./components/Footer.vue";
 
 *::selection {
   color: currentColor;
-  background-color: var(--color-lime);
+  background-color: var(--color-purple);
 }
 
 a,
@@ -58,6 +58,8 @@ h6 {
   --color-black: #000;
   --color-lime: rgb(89, 201, 145);
   --color-red: rgb(212, 62, 62);
+  --color-purple: rgb(144, 68, 216);
+  --color-dark-purple: rgb(64, 29, 97);
   --color-primary: var(--color-black);
   --color-secondary: var(--color-white);
   --h1-size: 12vw;
@@ -73,7 +75,9 @@ h6 {
   --image-width: 50vw;
   --font-family: Arial, Helvetica, sans-serif;
   --animation--fade-in: fadeIn 500ms ease-in-out forwards;
+  --animation--move: move 500ms ease-in-out forwards;
   --animation--fade-in-and-move: fadeInAndMove 500ms ease-in-out forwards;
+  --animation--background-gradient: backgroundGradient 600ms ease-in-out forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -135,14 +139,29 @@ h2 {
   }
 }
 
+@keyframes move {
+  from  {
+    transform: translateY(40px);
+  } to {
+    transform: translateY(0px);
+  }
+}
+
 @keyframes fadeInAndMove {
   from  {
     opacity: 0;
     transform: translateY(40px);
-  }
-  to {
+  } to {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@keyframes backgroundGradient {
+  from {
+    background-position-x: 100%;
+  } to {
+    background-position-x: 10%;
   }
 }
 </style>
