@@ -1,8 +1,54 @@
 <template>
   <section>
     <transition-group tag="h2" appear @enter="enter">
-      <div v-for="(line, index) in lines" :key="index" class="hehe">
-        <div class="hehe__inner">{{ line }}</div>
+      <div class="hehe" key="1">
+        <div class="hehe__inner">
+          I create
+          <span
+            @mouseover="hovering = 'digitalProducts'"
+            @mouseleave="hovering = ''"
+            :class="{ highlight: hovering === 'digitalProducts' }"
+          >
+            digital
+          </span>
+        </div>
+      </div>
+      <div class="hehe" key="2">
+        <div class="hehe__inner">
+          <span
+            @mouseover="hovering = 'digitalProducts'"
+            @mouseleave="hovering = ''"
+            :class="{ highlight: hovering === 'digitalProducts' }"
+          >
+            products
+          </span>
+          with a
+        </div>
+      </div>
+      <div class="hehe" key="3">
+        <div class="hehe__inner">
+          <span
+            @mouseover="hovering = 'creativeMind'"
+            @mouseleave="hovering = ''"
+            :class="{ highlight: hovering === 'creativeMind' }"
+          >
+            creative mind
+          </span>
+        </div>
+      </div>
+      <div class="hehe" key="4">
+        <div class="hehe__inner">and a focus on</div>
+      </div>
+      <div class="hehe" key="5">
+        <div class="hehe__inner">
+          <span
+            @mouseover="hovering = 'webBasedApplications'"
+            @mouseleave="hovering = ''"
+            :class="{ highlight: hovering === 'webBasedApplications' }"
+          >
+            web-based applications.
+          </span>
+        </div>
       </div>
     </transition-group>
     <img
@@ -17,17 +63,10 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
+import { defineProps, ref } from "vue";
 import { TextReveal } from "../assets/js/textReveal";
 
-const lines = [
-  "I create digital",
-  "products with a",
-  "creative mind",
-  "and a focus on",
-  "web-based",
-  "applications.",
-];
+const hovering = ref("");
 
 defineProps({
   text: String,
@@ -50,5 +89,9 @@ img {
   margin-bottom: calc(var(--content-spacing-y--large) / -2);
   margin-left: var(--content-spacing-x--large);
   box-shadow: 0 50px 100px rgba(0, 0, 0, 0.25);
+}
+
+.highlight {
+  color: var(--color-highlight);
 }
 </style>

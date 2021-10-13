@@ -1,5 +1,6 @@
 <template>
   <!-- <Renderer /> -->
+  <Cursor :targets="['a', 'button']" :hoverSize="3" />
   <Navigation />
   <Stage />
   <Introduction
@@ -16,12 +17,12 @@
 </template>
 
 <script setup>
+import Cursor from "./components/Cursor.vue";
 import Navigation from "./components/Navigation.vue";
 import Stage from "./components/Stage.vue";
 import Introduction from "./components/Introduction.vue";
 import Social from "./components/Social.vue";
 import Footer from "./components/Footer.vue";
-import Renderer from "./components/Renderer.vue";
 </script>
 
 <style>
@@ -31,11 +32,12 @@ import Renderer from "./components/Renderer.vue";
   box-sizing: border-box;
   background: transparent;
   border: 0;
+  cursor: none;
 }
 
 *::selection {
   color: currentColor;
-  background-color: var(--color-purple);
+  background-color: var(--color-highlight);
 }
 
 a,
@@ -58,11 +60,12 @@ h6 {
   --color-white: #fff;
   --color-black: #000;
   --color-lime: rgb(89, 201, 145);
-  --color-red: rgb(212, 62, 62);
+  --color-red: #e93f33;
   --color-purple: rgb(144, 68, 216);
   --color-dark-purple: rgb(64, 29, 97);
   --color-primary: var(--color-black);
   --color-secondary: var(--color-white);
+  --color-highlight: var(--color-red);
   --h1-size: 10vw;
   --h2-size: calc(var(--h1-size) / 1.2);
   --content-spacing-x: 30px;
@@ -76,6 +79,7 @@ h6 {
   --image-width: 50vw;
   --font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif;
+  --ease: cubic-bezier(0.23, 1, 0.32, 1);
   --animation--fade-in: fadeIn 500ms ease-in-out forwards;
   --animation--move: move 500ms ease-in-out forwards;
   --animation--fade-in-and-move: fadeInAndMove 500ms ease-in-out forwards;
@@ -131,6 +135,10 @@ h1 {
 h2 {
   padding: var(--content-spacing-y--large) var(--content-spacing-x--large);
   font-size: var(--h2-size);
+}
+
+svg {
+  pointer-events: none;
 }
 
 .hehe {
