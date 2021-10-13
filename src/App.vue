@@ -1,6 +1,6 @@
 <template>
   <!-- <Renderer /> -->
-  <Navigation text="samsour." />
+  <Navigation />
   <Stage />
   <Introduction
     imageUrl="https://gravatar.com/avatar/ffbe5501ae6465788b4df385fcd944c7?s=500"
