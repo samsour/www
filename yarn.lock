@@ -336,6 +336,11 @@ generic-names@^2.0.1:
   dependencies:
     loader-utils "^1.1.0"
 
+gsap@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.8.0.tgz#a404dd6ebbaabc92605539aea9d98e3098688064"
+  integrity sha512-cvpzKkWFePDZCycwXwJnDSpTR3j+a4QLQF/t0c+pXqzRESgAYx5hieaoshzZFjbwsARqr0+5c3GKE7wI273w/g==
+
 has-flag@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
@@ -563,10 +568,20 @@ svgo@^2.3.0:
     csso "^4.2.0"
     stable "^0.1.8"
 
+three@0.127:
+  version "0.127.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.127.0.tgz#c463f4d41b2c735dcf8e9e51a388815e80cd3791"
+  integrity sha512-wtgrn+mhYUbobxT7QN3GPdu3SRpSBQvwY6uOzLChWS7QE//f7paDU/+wlzbg+ngeIvBBqjBHSRuywTh8A99Jng==
+
 to-fast-properties@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
   integrity sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=
+
+troisjs@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/troisjs/-/troisjs-0.3.2.tgz#c2c3235ae4f2e92349a860701a87ff3dd95e4aa7"
+  integrity sha512-RF+r6tZvODVG1kwiz2BacxJTzap5UIlhIX3v9dmU/t4guIkeAA8VB8dy441vl+gPpQEuavOF5EkCs83bu3f5nQ==
 
 util-deprecate@^1.0.2:
   version "1.0.2"

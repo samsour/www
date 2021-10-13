@@ -1,6 +1,12 @@
 <template>
   <section>
-    <h2 v-html="text"></h2>
+    <h2>
+      <div>I create digital</div>
+      <div>products with a</div>
+      <div>creative mind</div>
+      <div>and a focus on</div>
+      <div>web-based applications.</div>
+    </h2>
     <img
       alt="Sam"
       src="./../assets/images/profile.jpg"

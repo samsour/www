@@ -1,8 +1,8 @@
 <template>
+  <!-- <Renderer /> -->
   <Navigation text="samsour." />
   <Stage />
   <Introduction
-    text="I create digital products with a creative mind and a focus on web-based applications."
     imageUrl="https://gravatar.com/avatar/ffbe5501ae6465788b4df385fcd944c7?s=500"
   />
   <Social />
@@ -21,6 +21,7 @@ import Stage from "./components/Stage.vue";
 import Introduction from "./components/Introduction.vue";
 import Social from "./components/Social.vue";
 import Footer from "./components/Footer.vue";
+import Renderer from "./components/Renderer.vue";
 </script>
 
 <style>
@@ -73,11 +74,13 @@ h6 {
   --icon-spacing: 30px;
   --logo-width: 184px;
   --image-width: 50vw;
-  --font-family: Arial, Helvetica, sans-serif;
+  --font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif;
   --animation--fade-in: fadeIn 500ms ease-in-out forwards;
   --animation--move: move 500ms ease-in-out forwards;
   --animation--fade-in-and-move: fadeInAndMove 500ms ease-in-out forwards;
-  --animation--background-gradient: backgroundGradient 600ms ease-in-out forwards;
+  --animation--background-gradient: backgroundGradient 600ms ease-in-out
+    forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -142,7 +145,8 @@ h2 {
 @keyframes move {
   from  {
     transform: translateY(40px);
-  } to {
+  }
+  to {
     transform: translateY(0px);
   }
 }
@@ -151,7 +155,8 @@ h2 {
   from  {
     opacity: 0;
     transform: translateY(40px);
-  } to {
+  }
+  to {
     opacity: 1;
     transform: translateY(0px);
   }
@@ -160,7 +165,8 @@ h2 {
 @keyframes backgroundGradient {
   from {
     background-position-x: 100%;
-  } to {
+  }
+  to {
     background-position-x: 10%;
   }
 }

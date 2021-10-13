@@ -1,22 +1,38 @@
 <template>
   <section>
-    <h1>
-      <span>Frontend</span><br /><span>Web Development</span>
-    </h1>
+    <transition appear @before-enter="beforeEnter" @enter="enter">
+      <h1 class="hehe">
+        <div class="hehe__inner">Frontend</div>
+        <div class="hehe__inner">
+          <strong>Web Development</strong>
+        </div>
+      </h1>
+    </transition>
   </section>
 </template>
 
 <script setup>
-import { defineProps } from "vue";
+import { ref, defineProps, onMounted } from "vue";
+import { TextReveal } from "../assets/js/textReveal";
 
 defineProps({
   text: String,
+});
+
+const root = ref(null);
+
+const beforeEnter = (el) => {};
+
+const enter = (el) => {};
+
+onMounted(() => {
+  console.log();
 });
 </script>
 
 <style scoped>
 section {
-  background: var(--color-primary);
+  background-color: var(--color-primary);
   color: var(--color-secondary);
   min-height: 100vh;
   display: flex;
@@ -38,18 +54,22 @@ section::after {
   bottom: 5vh;
 }
 
-span {
+div {
   opacity: 0;
   transform: translateY(-20px);
-  animation: var(--animation--fade-in-and-move), var(--animation--background-gradient);
+  animation: var(--animation--fade-in-and-move),
+    var(--animation--background-gradient);
   animation-delay: 500ms;
-  background: linear-gradient(to left, var(--color-dark-purple), var(--color-secondary));
+  background: linear-gradient(
+    to left,
+    var(--color-primary),
+    var(--color-secondary)
+  );
   background-size: 300%;
   background-clip: text;
   color: #000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #0000;
-  font-weight: 600;
 }
 span + span {
   animation-delay: 1500ms;
