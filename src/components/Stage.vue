@@ -1,17 +1,15 @@
 <template>
   <section>
-    <h1>
-      <transition-group appear @enter="enter">
-        <div key="1" class="hehe">
-          <div class="hehe__inner">Frontend</div>
+    <transition-group appear @enter="enter" tag="h1">
+      <div key="1" class="hehe">
+        <div class="hehe__inner">Frontend</div>
+      </div>
+      <div key="2" class="hehe">
+        <div class="hehe__inner">
+          <strong>Web Development</strong>
         </div>
-        <div key="2" class="hehe">
-          <div class="hehe__inner">
-            <strong>Web Development</strong>
-          </div>
-        </div>
-      </transition-group>
-    </h1>
+      </div>
+    </transition-group>
   </section>
 </template>
 

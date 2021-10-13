@@ -1,4 +1,6 @@
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export class TextReveal {
   constructor(el) {
@@ -15,11 +17,15 @@ export class TextReveal {
     }
 
     this.inTimeline = gsap
-      .timeline({ defaults: { duration: 1.2, ease: "expo" } })
+      .timeline({
+        defaults: { duration: 1.2, ease: "expo" },
+        scrollTrigger: { trigger: this.DOM.inner },
+      })
       .set(this.DOM.inner, {
         y: "150%",
         rotate: 15,
         opacity: 0,
+        backgroundPositionX: "100%",
       })
       .to(this.DOM.inner, {
         y: "0%",
@@ -27,6 +33,7 @@ export class TextReveal {
         opacity: 1,
         stagger: 0.03,
         delay: 0.2,
+        backgroundPositionX: "0%",
       });
     return this.inTimeline;
   }

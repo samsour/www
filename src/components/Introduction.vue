@@ -1,12 +1,10 @@
 <template>
   <section>
-    <h2>
-      <div>I create digital</div>
-      <div>products with a</div>
-      <div>creative mind</div>
-      <div>and a focus on</div>
-      <div>web-based applications.</div>
-    </h2>
+    <transition-group tag="h2" appear @enter="enter">
+      <div v-for="(line, index) in lines" :key="index" class="hehe">
+        <div class="hehe__inner">{{ line }}</div>
+      </div>
+    </transition-group>
     <img
       alt="Sam"
       src="./../assets/images/profile.jpg"
@@ -20,11 +18,26 @@
 
 <script setup>
 import { defineProps } from "vue";
+import { TextReveal } from "../assets/js/textReveal";
+
+const lines = [
+  "I create digital",
+  "products with a",
+  "creative mind",
+  "and a focus on",
+  "web-based",
+  "applications.",
+];
 
 defineProps({
   text: String,
   imageUrl: String,
 });
+
+const enter = (el) => {
+  const animation = new TextReveal(el);
+  animation.in();
+};
 </script>
 
 <style scoped>

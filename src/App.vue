@@ -63,7 +63,7 @@ h6 {
   --color-dark-purple: rgb(64, 29, 97);
   --color-primary: var(--color-black);
   --color-secondary: var(--color-white);
-  --h1-size: 12vw;
+  --h1-size: 10vw;
   --h2-size: calc(var(--h1-size) / 1.2);
   --content-spacing-x: 30px;
   --content-spacing-y: 8vw;
@@ -138,6 +138,7 @@ h2 {
 }
 
 .hehe__inner {
+  opacity: 0;
   display: inline-block;
   transform-origin: 0% 50%;
   will-change: transform;
