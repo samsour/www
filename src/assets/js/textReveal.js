@@ -5,12 +5,11 @@ export class TextReveal {
     this.DOM = {
       outer: el,
       inner: Array.isArray(el)
-        ? el.map((outer) => outer.querySelector(".oh__inner"))
-        : el.querySelector(".oh__inner"),
+        ? el.map((outer) => outer.querySelector(".hehe__inner"))
+        : el.querySelector(".hehe__inner"),
     };
   }
   in() {
-    console.log(this.DOM);
     if (this.outTimeline && this.outTimeline.isActive()) {
       this.outTimeline.kill();
     }
@@ -20,11 +19,14 @@ export class TextReveal {
       .set(this.DOM.inner, {
         y: "150%",
         rotate: 15,
+        opacity: 0,
       })
       .to(this.DOM.inner, {
         y: "0%",
         rotate: 0,
+        opacity: 1,
         stagger: 0.03,
+        delay: 0.2,
       });
     return this.inTimeline;
   }

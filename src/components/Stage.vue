@@ -1,33 +1,32 @@
 <template>
   <section>
-    <transition appear @before-enter="beforeEnter" @enter="enter">
-      <h1 class="hehe">
-        <div class="hehe__inner">Frontend</div>
-        <div class="hehe__inner">
-          <strong>Web Development</strong>
+    <h1>
+      <transition-group appear @enter="enter">
+        <div key="1" class="hehe">
+          <div class="hehe__inner">Frontend</div>
         </div>
-      </h1>
-    </transition>
+        <div key="2" class="hehe">
+          <div class="hehe__inner">
+            <strong>Web Development</strong>
+          </div>
+        </div>
+      </transition-group>
+    </h1>
   </section>
 </template>
 
 <script setup>
-import { ref, defineProps, onMounted } from "vue";
+import { defineProps } from "vue";
 import { TextReveal } from "../assets/js/textReveal";
 
 defineProps({
   text: String,
 });
 
-const root = ref(null);
-
-const beforeEnter = (el) => {};
-
-const enter = (el) => {};
-
-onMounted(() => {
-  console.log();
-});
+const enter = (el) => {
+  const animation = new TextReveal(el);
+  animation.in();
+};
 </script>
 
 <style scoped>
@@ -54,12 +53,7 @@ section::after {
   bottom: 5vh;
 }
 
-div {
-  opacity: 0;
-  transform: translateY(-20px);
-  animation: var(--animation--fade-in-and-move),
-    var(--animation--background-gradient);
-  animation-delay: 500ms;
+h1 div {
   background: linear-gradient(
     to left,
     var(--color-primary),
@@ -70,9 +64,6 @@ div {
   color: #000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #0000;
-}
-span + span {
-  animation-delay: 1500ms;
 }
 
 @keyframes drawHeight {

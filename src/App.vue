@@ -133,6 +133,16 @@ h2 {
   font-size: var(--h2-size);
 }
 
+.hehe {
+  overflow: hidden;
+}
+
+.hehe__inner {
+  display: inline-block;
+  transform-origin: 0% 50%;
+  will-change: transform;
+}
+
 @keyframes fadeIn {
   from  {
     opacity: 0;
