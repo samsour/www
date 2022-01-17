@@ -1,11 +1,17 @@
 <template>
   <nav>
-    <a href="//github.com/samsour" target="_blank" rel="noopener noreferrer">
+    <a
+      href="//github.com/samsour"
+      aria-label="GitHub"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <GitHub />
       <span>GitHub</span>
     </a>
     <a
       href="//www.linkedin.com/in/samsauer/"
+      aria-label="LinkedIn"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -14,6 +20,7 @@
     </a>
     <a
       href="//www.xing.com/profile/Sam_Sauer/cv"
+      aria-label="Xing"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -22,6 +29,7 @@
     </a>
     <a
       href="//twitter.com/qwerfeldein"
+      aria-label="Twitter"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -30,6 +38,7 @@
     </a>
     <a
       href="mailto:hi@samsour.de?subject=What%27s%20up%3F"
+      aria-label="Mail"
       target="_blank"
       rel="noopener noreferrer"
     >
