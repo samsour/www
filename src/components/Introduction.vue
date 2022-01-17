@@ -69,18 +69,13 @@
         </div>
       </div>
     </transition-group>
-    <img
-      alt="Sam"
-      src="./../assets/images/profile.jpg"
-      srcset="
-        ./../assets/images/profile.jpg   1x,
-        ./../assets/images/profile2x.jpg 2x
-      "
-    />
+
+    <ProfileImage />
   </section>
 </template>
 
 <script setup>
+import ProfileImage from "./ProfileImage.vue";
 import { defineProps, ref } from "vue";
 import { TextReveal } from "../assets/js/textReveal";
 
@@ -102,13 +97,6 @@ h2 {
   padding-bottom: calc(var(--content-spacing-y--large) / 2);
 }
 
-img {
-  width: var(--image-width);
-  margin-bottom: calc(var(--content-spacing-y--large) / -2);
-  margin-left: var(--content-spacing-x--large);
-  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.25);
-}
-
 /* .highlight {
   color: var(--color-highlight);
 } */
@@ -122,15 +110,28 @@ a {
 }
 
 a::after {
-  --indentation: 110px;
+  --indentation: 22%;
   width: calc(100% - var(--indentation));
-  height: 0px;
   left: var(--indentation);
   background-color: currentColor;
   content: "";
   display: block;
   position: absolute;
-  bottom: 5px;
-  height: 10px;
+  bottom: 0.25vw;
+  height: 0.7vw;
+}
+
+@media screen and (min-width: 1200px) {
+  a::after {
+    bottom: 0.15vw;
+    height: 0.5vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  a::after {
+    bottom: 5px;
+    height: 10px;
+  }
 }
 </style>
