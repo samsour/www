@@ -60,7 +60,7 @@ h6 {
   --color-white: #fff;
   --color-black: #000;
   --color-lime: rgb(89, 201, 145);
-  --color-red: #e93f33;
+  --color-red: #f4003c;
   --color-purple: rgb(144, 68, 216);
   --color-dark-purple: rgb(64, 29, 97);
   --color-primary: var(--color-black);

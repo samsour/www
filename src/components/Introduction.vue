@@ -13,6 +13,7 @@
           </span>
         </div>
       </div>
+
       <div class="hehe" key="2">
         <div class="hehe__inner">
           <span
@@ -25,6 +26,7 @@
           with a
         </div>
       </div>
+
       <div class="hehe" key="3">
         <div class="hehe__inner">
           <span
@@ -36,9 +38,11 @@
           </span>
         </div>
       </div>
+
       <div class="hehe" key="4">
         <div class="hehe__inner">and a focus on</div>
       </div>
+
       <div class="hehe" key="5">
         <div class="hehe__inner">
           <span
@@ -46,7 +50,21 @@
             @mouseleave="hovering = ''"
             :class="{ highlight: hovering === 'webBasedApplications' }"
           >
-            web-based applications.
+            web-based applications
+          </span>
+        </div>
+      </div>
+
+      <div class="hehe" key="6">
+        <div class="hehe__inner">
+          <span
+            @mouseover="hovering = 'krekeny'"
+            @mouseleave="hovering = ''"
+            :class="{ highlight: hovering === 'krekeny' }"
+          >
+            <a href="//krekeny.com" target="_blank" rel="noopener noreferrer">
+              @krekeny </a
+            >.
           </span>
         </div>
       </div>
@@ -91,7 +109,28 @@ img {
   box-shadow: 0 50px 100px rgba(0, 0, 0, 0.25);
 }
 
-.highlight {
+/* .highlight {
   color: var(--color-highlight);
+} */
+
+.highlight a {
+  color: var(--color-highlight);
+}
+a {
+  text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  --indentation: 110px;
+  width: calc(100% - var(--indentation));
+  height: 0px;
+  left: var(--indentation);
+  background-color: currentColor;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  height: 10px;
 }
 </style>
