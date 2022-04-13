@@ -62,7 +62,11 @@
             @mouseleave="hovering = ''"
             :class="{ highlight: hovering === 'krekeny' }"
           >
-            <a href="//krekeny.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="//www.krekeny.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               @krekeny </a
             >.
           </span>
