@@ -2,7 +2,7 @@
   <!-- <Renderer /> -->
   <Cursor :targets="['a', 'button']" :hoverSize="3" />
   <Navigation />
-  <Stage />
+  <!-- <Stage /> -->
   <Introduction
     imageUrl="https://gravatar.com/avatar/ffbe5501ae6465788b4df385fcd944c7?s=500"
   />
@@ -11,7 +11,7 @@
     imprint="imprint"
     close="close"
     note="made with 🌱 / hosted on 100% green electricity"
-    address="Sam Sauer<br />Nahest. 22<br />63110 Rodgau"
+    address="Sam Sauer<br />63110 Rodgau"
     mail="hi@samsour.de"
   />
 </template>
@@ -19,7 +19,7 @@
 <script setup>
 import Cursor from "./components/Cursor.vue";
 import Navigation from "./components/Navigation.vue";
-import Stage from "./components/Stage.vue";
+// import Stage from "./components/Stage.vue";
 import Introduction from "./components/Introduction.vue";
 import Social from "./components/Social.vue";
 import Footer from "./components/Footer.vue";
@@ -71,7 +71,7 @@ h6 {
   --content-spacing-x: 30px;
   --content-spacing-y: 8vw;
   --content-spacing-x--large: calc(var(--content-spacing-x) * 2);
-  --content-spacing-y--large: calc(var(--content-spacing-y) * 3);
+  --content-spacing-y--large: calc(var(--content-spacing-y) * 2.5);
   --icon-size: 40px;
   --icon-size--social: 28px;
   --icon-spacing: 30px;
@@ -127,12 +127,13 @@ h4 {
   letter-spacing: -0.03em;
 }
 
-h1 {
-  padding: var(--content-spacing-y) var(--content-spacing-x);
-  font-size: var(--h1-size);
+h1,
+h2 {
+  padding: var(--content-spacing-y--large) var(--content-spacing-x--large);
+  font-size: var(--h2-size);
 }
 
-h2 {
+h3 {
   padding: var(--content-spacing-y--large) var(--content-spacing-x--large);
   font-size: var(--h2-size);
 }

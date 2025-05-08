@@ -1,6 +1,6 @@
 <template>
   <section>
-    <transition-group tag="h2" appear @enter="enter">
+    <transition-group tag="h1" appear @enter="enter">
       <div class="hehe" key="1">
         <div class="hehe__inner">
           I create

@@ -1,7 +1,16 @@
 <template>
   <nav>
     <a
-      href="//github.com/samsour"
+      href="https://bsky.app/profile/samsour.de"
+      aria-label="Twitter"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Bluesky />
+      <span>Twitter</span>
+    </a>
+    <a
+      href="https://github.com/samsour"
       aria-label="GitHub"
       target="_blank"
       rel="noopener noreferrer"
@@ -10,7 +19,7 @@
       <span>GitHub</span>
     </a>
     <a
-      href="//www.linkedin.com/in/samsauer/"
+      href="https://www.linkedin.com/in/samsauer/"
       aria-label="LinkedIn"
       target="_blank"
       rel="noopener noreferrer"
@@ -19,22 +28,13 @@
       <span>LinkedIn</span>
     </a>
     <a
-      href="//www.xing.com/profile/Sam_Sauer/cv"
+      href="https://www.xing.com/profile/Sam_Sauer/cv"
       aria-label="Xing"
       target="_blank"
       rel="noopener noreferrer"
     >
       <Xing />
       <span>Xing</span>
-    </a>
-    <a
-      href="//twitter.com/qwerfeldein"
-      aria-label="Twitter"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Twitter />
-      <span>Twitter</span>
     </a>
     <a
       href="mailto:hi@samsour.de?subject=What%27s%20up%3F"
@@ -52,7 +52,7 @@
 import GitHub from "../assets/icons/github.svg";
 import LinkedIn from "../assets/icons/linkedin.svg";
 import Xing from "../assets/icons/xing.svg";
-import Twitter from "../assets/icons/twitter.svg";
+import Bluesky from "../assets/icons/bluesky.svg";
 import Mail from "../assets/icons/mail.svg";
 </script>
 
