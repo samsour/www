@@ -46,16 +46,28 @@
       <div class="hehe" key="5">
         <div class="hehe__inner">
           <span
-            @mouseover="hovering = 'webBasedApplications'"
+            @mouseover="hovering = 'webBased'"
             @mouseleave="hovering = ''"
-            :class="{ highlight: hovering === 'webBasedApplications' }"
+            :class="{ highlight: hovering === 'webBased' }"
           >
-            web-based applications
+            web-based
           </span>
         </div>
       </div>
 
       <div class="hehe" key="6">
+        <div class="hehe__inner">
+          <span
+            @mouseover="hovering = 'applications'"
+            @mouseleave="hovering = ''"
+            :class="{ highlight: hovering === 'applications' }"
+          >
+            applications
+          </span>
+        </div>
+      </div>
+
+      <div class="hehe" key="7">
         <div class="hehe__inner">
           <span
             @mouseover="hovering = 'krekeny'"
