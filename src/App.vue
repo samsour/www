@@ -4,6 +4,7 @@
   <Navigation />
   <!-- <Stage /> -->
   <Introduction
+    class="introduction"
     imageUrl="https://gravatar.com/avatar/ffbe5501ae6465788b4df385fcd944c7?s=500"
   />
   <Social />
@@ -151,6 +152,14 @@ svg {
   display: inline-block;
   transform-origin: 0% 50%;
   will-change: transform;
+}
+
+.introduction {
+  padding-top: 2.75rem;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0rem;
+  }
 }
 
 @keyframes fadeIn {
