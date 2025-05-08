@@ -27,7 +27,15 @@ nav {
   mix-blend-mode: difference;
   opacity: 0;
   will-change: opacity;
-  animation: var(--animation--fade-in);
-  animation-delay: 1.5s;
+  animation: fadeIn 1s ease-in-out 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
