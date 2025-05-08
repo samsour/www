@@ -14,7 +14,6 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
 import { TextReveal } from "../assets/js/textReveal";
 
 defineProps({

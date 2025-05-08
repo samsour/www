@@ -92,7 +92,7 @@
 
 <script setup>
 import ProfileImage from "./ProfileImage.vue";
-import { defineProps, ref } from "vue";
+import { ref } from "vue";
 import { TextReveal } from "../assets/js/textReveal";
 
 const hovering = ref("");

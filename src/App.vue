@@ -163,7 +163,7 @@ svg {
 }
 
 @keyframes fadeIn {
-  from  {
+  from {
     opacity: 0;
   }
   to {
@@ -172,7 +172,7 @@ svg {
 }
 
 @keyframes move {
-  from  {
+  from {
     transform: translateY(40px);
   }
   to {
@@ -181,7 +181,7 @@ svg {
 }
 
 @keyframes fadeInAndMove {
-  from  {
+  from {
     opacity: 0;
     transform: translateY(40px);
   }
